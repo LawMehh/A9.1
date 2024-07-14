@@ -1,0 +1,56 @@
+/* Center the board on the page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Styling for the control buttons */
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Styling for the board */
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 2px solid #333;
+}
+
+/* Styling for each square on the board */
+.square {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Styling for light squares */
+.light {
+    background-color: #b5c0f0;
+}
+
+/* Styling for dark squares */
+.dark {
+    background-color: #6372b5;
+}
+
+/* Highlight selected square */
+.selected {
+    background-color: rgb(208, 154, 242);
+}
